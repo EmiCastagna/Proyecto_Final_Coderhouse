@@ -51,26 +51,29 @@
             <h1>Contacto</h2>
             <h2>¿Tenés inquietudes? Dejanos tu consulta</h4>
         </div>
-        <div class="contact__form animate__animated animate__fadeInLeft">
-            <div class="contact__form__campo">
-                <label for="Nombre" class="contact__form__label">Ingrese Nombre</label>
-                <input type="text" id="Nombre" placeholder="nombre" class="contact__form__input">
+        <div class="container__form">
+            <div class="form__left animate__animated animate__fadeInLeft">
+                <div class="form__left__campo">
+                    <!-- <label for="Nombre" class="form__left__campo-label">Ingrese Nombre</label> -->
+                    <input type="text" id="Nombre" placeholder="Ingrese su nombre" class="form__left__campo-input" required>
+                </div>
+                <div class="form__left__campo">
+                    <!-- <label for="Apellido" class="form__left__campo-label">Ingrese Apellido</label> -->
+                    <input type="text" id="Apellido" placeholder="Ingrese su apellido" class="form__left__campo-input">
+                </div>
+                <div class="form__left__campo">
+                    <!-- <label for="Email" class="form__left__campo-label">Ingrese Email</label> -->
+                    <input type="email" id="Email" placeholder="Ingrese su email" class="form__left__campo-input" required>
+                </div>
             </div>
-            <div class="contact__form__campo">
-                <label for="Apellido" class="contact__form__label">Ingrese Apellido</label>
-                <input type="text" id="Apellido" placeholder="apellido" class="contact__form__input">
+            <div class="form__right animate__animated animate__fadeInLeft">
+                <div class="form__right__campo">
+                    <!-- <label for="Email" class="form__right__campo-label">Consulta</label> -->
+                    <input type="text" id="Consulta" placeholder="Cuentenos su consulta" class="form__right__campo-input" required>
+                </div>
             </div>
-            <div class="contact__form__campo">
-                <label for="Email" class="contact__form__label">Ingrese Email</label>
-                <input type="email" id="Email" placeholder="email" class="contact__form__input" required>
-            </div>
-            <div class="contact__form__campo">
-                <label for="Email" class="contact__form__label">Consulta</label>
-                <input type="text" id="Consulta" placeholder="contanos tu consulta" class="contact__form__input" required>
-            </div>
-
-            <input type="submit" id="Enviar" value="Enviar" class="contact__form__btn">
         </div>
+        <input type="submit" id="Enviar" value="Enviar" class="form__button">
     </main>
 
     <footer>

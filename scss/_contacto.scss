@@ -3,7 +3,7 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
 }
 
@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 40px;
+    margin: 2.5rem;
 
     h1 {
         color: map-get($paletaColores, blanco);
@@ -24,28 +24,41 @@
     }
 }
 
-.contact__form {
+.container__form {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    margin: 10px;
+    align-items: center;
+    flex-direction: row;
+    background-color: map-get($paletaColores, rojo-op);
+    border-radius: 10px;
 
-    .contact__form__campo {
+    input {
+        border-radius: 5px;
+        background-color: transparent;
+        border-color: black;
+    }
+
+    .form__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    
+        .form__left__campo {
+            padding: 5px;
+        }
+        
+    }
+    
+    .form__right__campo {
         padding: 5px;
     }
-    
-    .contact__form__label {
-        color: white;
-    }
-    
-    .contact__form__input {
-        border-radius: 5px;
-    }
-    
-    .contact__form__btn {
-        width: 60px;
-        height: 30px;
-        margin-top: 15px;
-    }
+}
+
+
+.form__button {
+    width: 60px;
+    height: 30px;
+    margin-top: 15px;
 }

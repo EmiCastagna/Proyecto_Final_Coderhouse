@@ -179,14 +179,13 @@ footer {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center; }
 
 .contact__title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 40px; }
+  margin: 2.5rem; }
   .contact__title h1 {
     color: white;
     font-size: 50px; }
@@ -194,22 +193,32 @@ footer {
     color: white;
     font-size: 20px; }
 
-.contact__form {
+.container__form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  margin: 10px; }
-  .contact__form .contact__form__campo {
+  align-items: center;
+  flex-direction: row;
+  background-color: #590202;
+  border-radius: 10px; }
+  .container__form input {
+    border-radius: 5px;
+    background-color: transparent;
+    border-color: black; }
+  .container__form .form__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px; }
+    .container__form .form__left .form__left__campo {
+      padding: 5px; }
+  .container__form .form__right__campo {
     padding: 5px; }
-  .contact__form .contact__form__label {
-    color: white; }
-  .contact__form .contact__form__input {
-    border-radius: 5px; }
-  .contact__form .contact__form__btn {
-    width: 60px;
-    height: 30px;
-    margin-top: 15px; }
+
+.form__button {
+  width: 60px;
+  height: 30px;
+  margin-top: 15px; }
 
 @media (max-width: 1400px) {
   .aboutus__img {
