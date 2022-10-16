@@ -21,7 +21,7 @@
             left: 0;
             bottom: 0;
             position: absolute;
-            background-color: white;
+            background-color: map-get($paletaColores, rojo-2);
             opacity: 0;
             transition: ease-in-out all .4s;
         }

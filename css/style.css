@@ -15,17 +15,18 @@ header {
   grid-area: encabezado; }
 
 .navbar {
-  background-color: #414141 !important; }
+  background-color: #BFBFBF !important; }
 
 .menu__logo {
   width: 6vw; }
 
 .nav-link {
-  color: white !important;
+  font-weight: bold !important;
+  color: #0D0D0D !important;
   margin-left: 20px; }
 
 footer {
-  background-color: #212121;
+  background-color: #0D0D0D;
   grid-area: footer;
   display: flex;
   justify-content: center;
@@ -96,7 +97,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #26323880;
+  background-color: #bfbfbf4f;
   margin: 20px 0; }
 
 .card {
@@ -131,8 +132,8 @@ footer {
 .card__btn {
   text-decoration: none;
   color: white;
-  background-color: #263238;
-  width: 50%;
+  background-color: #590202;
+  width: 40%;
   border-radius: 5px;
   display: flex;
   justify-content: center; }
@@ -219,7 +220,7 @@ footer {
       left: 0;
       bottom: 0;
       position: absolute;
-      background-color: white;
+      background-color: #8C0303;
       opacity: 0;
       transition: ease-in-out all .4s; } }
 

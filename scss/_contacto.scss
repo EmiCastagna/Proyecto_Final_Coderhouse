@@ -14,12 +14,12 @@
     margin: 40px;
 
     h1 {
-        color: map-get($colores, color-title);
+        color: map-get($paletaColores, blanco);
         font-size: 50px;
     }
 
     h2 {
-        color: map-get($colores, color-subtitle);
+        color: map-get($paletaColores, blanco);
         font-size: 20px;
     }
 }

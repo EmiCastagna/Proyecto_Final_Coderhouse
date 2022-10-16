@@ -3,7 +3,7 @@ header {
 }
 
 .navbar {
-    background-color: map-get($colores, color-navbar) !important;
+    background-color: map-get($paletaColores, gris) !important;
 }
 
 .menu__logo {
@@ -11,6 +11,7 @@ header {
 }
 
 .nav-link {
-    color: map-get($colores, color-text) !important;
+    font-weight: bold !important;
+    color: map-get($paletaColores, negro) !important;
     margin-left: 20px;
 }

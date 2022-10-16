@@ -21,11 +21,11 @@
 
 .aboutus__container {
     h1 {
-        color: map-get($colores, color-title);
+        color: map-get($paletaColores, blanco);
     }
 
     p {
-        color: map-get($colores, color-subtitle);
+        color: map-get($paletaColores, blanco);
     }
 }
 

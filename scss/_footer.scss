@@ -1,5 +1,5 @@
 footer {
-    background-color: map-get($colores, color-footer);
+    background-color: map-get($paletaColores, negro) ;
     grid-area: footer;
     display: flex;
     justify-content: center;
