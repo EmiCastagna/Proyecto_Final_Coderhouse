@@ -7,11 +7,23 @@ header {
 }
 
 .menu__logo {
-    width: 6vw;
+    width: 96px;
 }
 
-.nav-link {
-    font-weight: bold !important;
-    color: map-get($paletaColores, negro) !important;
-    margin-left: 20px;
+.navbar-light {
+    .navbar-toggler {
+        color: transparent;
+        border-color: transparent;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(13, 13, 13, .8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+
+    }
 }
+
+    .nav-link {
+        font-weight: bold !important;
+        color: map-get($paletaColores, negro) !important;
+        margin-left: 20px;
+    }
