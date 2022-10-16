@@ -1,0 +1,13 @@
+@import './mixins';
+@import './variables';
+* {
+    @include reset;
+}
+@import './layout';
+@import './header';
+@import './footer';
+@import './index';
+@import './productos';
+@import './sobre_nosotros';
+@import './contacto';
+@import './media_queries'

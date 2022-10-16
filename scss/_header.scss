@@ -1,0 +1,16 @@
+header {
+    grid-area: encabezado;
+}
+
+.navbar {
+    background-color: map-get($colores, color-navbar) !important;
+}
+
+.menu__logo {
+    width: 6vw;
+}
+
+.nav-link {
+    color: map-get($colores, color-text) !important;
+    margin-left: 20px;
+}

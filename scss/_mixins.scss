@@ -1,0 +1,14 @@
+@mixin reset {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+}
+
+@mixin card-size {
+    width: calc(80vw - 30px);
+    height: 230px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 20px 40px;
+}

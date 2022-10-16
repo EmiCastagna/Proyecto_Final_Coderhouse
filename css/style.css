@@ -1,0 +1,272 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Mukta', sans-serif; }
+
+.grilla {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: .13fr 1fr .15fr;
+  grid-template-areas: "encabezado" "home" "footer"; }
+
+header {
+  grid-area: encabezado; }
+
+.navbar {
+  background-color: #414141 !important; }
+
+.menu__logo {
+  width: 6vw; }
+
+.nav-link {
+  color: white !important;
+  margin-left: 20px; }
+
+footer {
+  background-color: #212121;
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.footer__redes {
+  display: flex;
+  justify-content: center; }
+  .footer__redes div a {
+    padding: 10px; }
+
+#home__main {
+  background-color: #d1d1d1;
+  grid-area: home;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr .75fr .25fr 1fr;
+  grid-template-areas: "mtb mtb deco1 deco1" "deco2 guantes guantes cascos";
+  row-gap: 1em;
+  column-gap: 1em;
+  background-image: url(../assets/images/background/Background_Black_1.webp);
+  background-size: cover;
+  flex-wrap: wrap; }
+
+.image__mtb {
+  background-color: aqua;
+  grid-area: mtb;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.image__deco-uno {
+  background-color: brown;
+  grid-area: deco1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.image__deco-dos {
+  background-color: blueviolet;
+  grid-area: deco2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.image__guantes {
+  background-color: chartreuse;
+  grid-area: guantes;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.image__cascos {
+  background-color: darkgoldenrod;
+  grid-area: cascos;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+#productos__background {
+  background-image: url(../assets/images/background/Background_Black_3.webp);
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #26323880;
+  margin: 20px 0; }
+
+.card {
+  display: flex;
+  flex-direction: row;
+  background-color: #eceff1;
+  width: calc(80vw - 30px);
+  height: 230px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin: 20px 40px; }
+
+.card__image {
+  width: 224px;
+  height: 100%;
+  border-top-left-radius: 20px; }
+
+.card__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 2px 0 5px;
+  margin: 5px 0 5px 5px; }
+
+.card__name {
+  font-size: 2rem; }
+
+.card__text {
+  display: flex;
+  flex-direction: column; }
+
+.card__btn {
+  text-decoration: none;
+  color: white;
+  background-color: #263238;
+  width: 50%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center; }
+
+#aboutus__main {
+  background-image: url(https://images.unsplash.com/photo-1603715749723-240c88df18b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+  background-size: cover; }
+
+.aboutus__container {
+  display: flex;
+  flex-direction: row;
+  height: 100%; }
+
+.aboutus__img {
+  display: flex; }
+  .aboutus__img img {
+    width: 25vw;
+    height: 100%;
+    object-fit: cover; }
+
+.aboutus__container h1 {
+  color: white; }
+
+.aboutus__container p {
+  color: white; }
+
+.aboutus__title {
+  font-size: 50px; }
+
+.aboutus__text {
+  font-size: 20px;
+  padding: 20px; }
+
+#contacto__main {
+  background-image: url(../assets/images/background/Background_Black_2.webp);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.contact__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px; }
+  .contact__title h1 {
+    color: white;
+    font-size: 50px; }
+  .contact__title h2 {
+    color: white;
+    font-size: 20px; }
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px; }
+  .contact__form .contact__form__campo {
+    padding: 5px; }
+  .contact__form .contact__form__label {
+    color: white; }
+  .contact__form .contact__form__input {
+    border-radius: 5px; }
+  .contact__form .contact__form__btn {
+    width: 60px;
+    height: 30px;
+    margin-top: 15px; }
+
+@media (max-width: 1400px) {
+  .aboutus__img {
+    display: none; } }
+
+@media (min-width: 1200px) {
+  .nav-link {
+    position: relative; }
+    .nav-link:hover:before {
+      opacity: 1; }
+    .nav-link:before {
+      content: '';
+      width: 100%;
+      height: 2px;
+      left: 0;
+      bottom: 0;
+      position: absolute;
+      background-color: white;
+      opacity: 0;
+      transition: ease-in-out all .4s; } }
+
+@media (max-width: 1200px) {
+  #home__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap; }
+  .img__mtb, .img__deco-uno, .img__deco-dos, .img__guantes, .img__cascos {
+    width: 50px; } }
+
+@media (min-width: 1024px) {
+  .card {
+    transition: transform .5s; }
+    .card:hover {
+      transform: scale(1.03); }
+  .footer__redes div a img {
+    transition: transform .5s; }
+    .footer__redes div a img:hover {
+      transform: scale(1.5); } }
+
+@media (max-width: 760px) {
+  .cards {
+    background-color: transparent; }
+  .card {
+    width: 224px;
+    height: 370px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 20px 40px;
+    display: flex;
+    flex-direction: column; }
+  .card__image {
+    width: 100%;
+    height: 200px; }
+  .card__description {
+    justify-content: space-between; }
+  .card__name, .card-price {
+    font-size: 20px; }
+  .card__btn {
+    margin-bottom: 10px; } }
+
+@media (max-width: 340px) {
+  .contact__form {
+    flex-direction: column;
+    align-items: flex-start; }
+  .contact__form__input {
+    border-radius: 5px;
+    width: 100%; } }

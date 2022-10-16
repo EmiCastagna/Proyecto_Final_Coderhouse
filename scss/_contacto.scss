@@ -1,0 +1,51 @@
+#contacto__main {
+    background-image: map-get($backgrounds, background-4);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+
+    h1 {
+        color: map-get($colores, color-title);
+        font-size: 50px;
+    }
+
+    h2 {
+        color: map-get($colores, color-subtitle);
+        font-size: 20px;
+    }
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+
+    .contact__form__campo {
+        padding: 5px;
+    }
+    
+    .contact__form__label {
+        color: white;
+    }
+    
+    .contact__form__input {
+        border-radius: 5px;
+    }
+    
+    .contact__form__btn {
+        width: 60px;
+        height: 30px;
+        margin-top: 15px;
+    }
+}

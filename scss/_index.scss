@@ -1,0 +1,54 @@
+#home__main {
+    background-color: #d1d1d1;
+    grid-area: home;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr .75fr .25fr 1fr;
+    grid-template-areas:"mtb mtb deco1 deco1"
+                        "deco2 guantes guantes cascos";
+    row-gap: 1em;
+    column-gap: 1em; 
+    background-image: map-get($backgrounds, background-1);
+    background-size: cover;
+    flex-wrap: wrap;
+}
+
+.image__mtb {
+    background-color: aqua;
+    grid-area: mtb;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image__deco-uno {
+    background-color: brown;
+    grid-area: deco1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image__deco-dos {
+    background-color: blueviolet;
+    grid-area: deco2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image__guantes {
+    background-color: chartreuse;
+    grid-area: guantes;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image__cascos {
+    background-color: darkgoldenrod;
+    grid-area: cascos;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
