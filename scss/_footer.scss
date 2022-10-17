@@ -2,11 +2,34 @@ footer {
     background-color: map-get($paletaColores, negro) ;
     grid-area: footer;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    
+    h5 {
+        font-size: large;
+        color: map-get($paletaColores, blanco);
+    }
+
+    .sucursal__map {
+        text-decoration: none;
+        color: map-get($paletaColores, gris);
+        font-size: medium;
+    }
+
+    p {
+        color: map-get($paletaColores, gris);
+        font-size: medium;
+    }
 }
 
-.footer__redes {
+
+.container__redes {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.redes__icons {
     display: flex;
     justify-content: center;
 
@@ -15,4 +38,22 @@ footer {
             padding: 10px;
         }
     }
+}
+
+.container__sucursal {
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sucursal__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sucursal__horarios {
+    margin-top: 20px;
 }

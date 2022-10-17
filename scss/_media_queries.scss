@@ -50,14 +50,14 @@
         }
     }
 
-    .footer__redes {
+    .redes__icons {
         div {
             a {
                 img {
                     transition: transform .5s;
     
                     &:hover {
-                        transform: scale(1.5);
+                        transform: scale(1.3);
                     }
                 }
             }

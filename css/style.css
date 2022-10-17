@@ -4,13 +4,6 @@
   box-sizing: border-box;
   font-family: 'Mukta', sans-serif; }
 
-.grilla {
-  width: 100%;
-  height: 100vh;
-  display: grid;
-  grid-template-rows: .13fr 1fr .15fr;
-  grid-template-areas: "encabezado" "home" "footer"; }
-
 header {
   grid-area: encabezado; }
 
@@ -36,14 +29,42 @@ footer {
   background-color: #0d0d0d;
   grid-area: footer;
   display: flex;
+  justify-content: flex-start;
+  align-items: flex-start; }
+  footer h5 {
+    font-size: large;
+    color: white; }
+  footer .sucursal__map {
+    text-decoration: none;
+    color: #BFBFBF;
+    font-size: medium; }
+  footer p {
+    color: #BFBFBF;
+    font-size: medium; }
+
+.container__redes {
+  margin-top: 20px;
+  margin-left: 40px; }
+
+.redes__icons {
+  display: flex;
+  justify-content: center; }
+  .redes__icons div a {
+    padding: 10px; }
+
+.container__sucursal {
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column; }
+
+.sucursal__link {
+  display: flex;
   justify-content: center;
   align-items: center; }
 
-.footer__redes {
-  display: flex;
-  justify-content: center; }
-  .footer__redes div a {
-    padding: 10px; }
+.sucursal__horarios {
+  margin-top: 20px; }
 
 #home__main {
   background-color: #d1d1d1;
@@ -179,7 +200,8 @@ footer {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  height: 100vh; }
 
 .contact__title {
   display: flex;
@@ -254,10 +276,10 @@ footer {
     transition: transform .5s; }
     .card:hover {
       transform: scale(1.03); }
-  .footer__redes div a img {
+  .redes__icons div a img {
     transition: transform .5s; }
-    .footer__redes div a img:hover {
-      transform: scale(1.5); } }
+    .redes__icons div a img:hover {
+      transform: scale(1.3); } }
 
 @media (max-width: 760px) {
   .cards {
