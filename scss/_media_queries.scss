@@ -64,6 +64,14 @@
         }
     }
 
+
+    .container__button {
+        transition: transform .5s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
 }
 
 @media (max-width: 760px) {
@@ -101,21 +109,13 @@
 }
 
 @media (max-width: 470px) {
+    .form__left__campo-input, .form__right__campo-input {
+        width: calc(100vw - 10vw);
+    }
+
     footer {
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-    }
-}
-
-@media (max-width: 340px) {
-    .contact__form {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .contact__form__input {
-        border-radius: 5px;
-        width: 100%;
     }
 }

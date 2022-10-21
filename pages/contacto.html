@@ -27,7 +27,6 @@
     <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <!-- Logo -->
             <a href="../index.html"><img src="../assets/images/Logo_2.webp" alt="Logo" class="menu__logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,35 +48,39 @@
 
     <main id="contacto__main">
         <div class="contact__title animate__animated animate__fadeInLeftBig">
-            <h1>Contacto</h2>
-                <h2>¿Tenés inquietudes? Dejanos tu consulta</h4>
+            <h1>Contacto</h1>
+            <h2>¿Tenés inquietudes? Dejanos tu consulta</h2>
         </div>
-        <div class="container__form">
-            <div class="form__left animate__animated animate__fadeInLeft">
-                <div class="form__left__campo">
-                    <!-- <label for="Nombre" class="form__left__campo-label">Ingrese Nombre</label> -->
-                    <input type="text" id="Nombre" placeholder="Ingrese su nombre" class="form__left__campo-input"
-                        required>
+        <div class="container">
+            <div class="container__form">
+                <div class="form__left animate__animated animate__fadeInLeft">
+                    <div class="form__left__campo">
+                        <label for="Nombre" class="form__left__campo-label">Ingrese Nombre</label>
+                        <input type="text" id="Nombre" placeholder="Ingrese su nombre" class="form__left__campo-input"
+                            required>
+                    </div>
+                    <div class="form__left__campo">
+                        <label for="Apellido" class="form__left__campo-label">Ingrese Apellido</label>
+                        <input type="text" id="Apellido" placeholder="Ingrese su apellido" class="form__left__campo-input">
+                    </div>
+                    <div class="form__left__campo">
+                        <label for="Email" class="form__left__campo-label">Ingrese Email</label>
+                        <input type="email" id="Email" placeholder="Ingrese su email" class="form__left__campo-input"
+                            required>
+                    </div>
                 </div>
-                <div class="form__left__campo">
-                    <!-- <label for="Apellido" class="form__left__campo-label">Ingrese Apellido</label> -->
-                    <input type="text" id="Apellido" placeholder="Ingrese su apellido" class="form__left__campo-input">
-                </div>
-                <div class="form__left__campo">
-                    <!-- <label for="Email" class="form__left__campo-label">Ingrese Email</label> -->
-                    <input type="email" id="Email" placeholder="Ingrese su email" class="form__left__campo-input"
-                        required>
+                <div class="form__right animate__animated animate__fadeInLeft">
+                    <div class="form__right__campo">
+                        <label for="Email" class="form__right__campo-label">Consulta</label>
+                        <input type="text" id="Consulta" placeholder="Cuentenos su consulta"
+                            class="form__right__campo-input" required>
+                    </div>
                 </div>
             </div>
-            <div class="form__right animate__animated animate__fadeInLeft">
-                <div class="form__right__campo">
-                    <!-- <label for="Email" class="form__right__campo-label">Consulta</label> -->
-                    <input type="text" id="Consulta" placeholder="Cuentenos su consulta"
-                        class="form__right__campo-input" required>
-                </div>
+            <div class="container__button">
+                <input type="submit" id="Enviar" value="Enviar consulta" class="form__button">
             </div>
         </div>
-        <input type="submit" id="Enviar" value="Enviar" class="form__button">
     </main>
 
     <footer>

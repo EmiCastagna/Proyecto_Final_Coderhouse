@@ -1,18 +1,18 @@
 #contacto__main {
-    background-image: map-get($backgrounds, background-4);
+    background-image: map-get($backgrounds, background-3);
     background-size: cover;
     display: flex;
     flex-direction: column;
     // justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
 }
 
 .contact__title {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2.5rem;
+    margin: 3rem;
 
     h1 {
         color: map-get($paletaColores, blanco);
@@ -22,6 +22,22 @@
     h2 {
         color: map-get($paletaColores, blanco);
         font-size: 20px;
+        margin-bottom: 40px;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 300px;
+
+    input {
+        border-radius: 5px;
+        background-color: white;
+        border-color: transparent;
     }
 }
 
@@ -29,37 +45,52 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    background-color: map-get($paletaColores, rojo-op);
-    border-radius: 10px;
-
-    input {
-        border-radius: 5px;
-        background-color: transparent;
-        border-color: black;
-    }
-
-    .form__left {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 10px;
-    
-        .form__left__campo {
-            padding: 5px;
-        }
-        
-    }
-    
-    .form__right__campo {
-        padding: 5px;
-    }
+    flex-wrap: wrap;
 }
 
+.form__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    height: 200px;
+}
+
+.form__left__campo {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.form__right {
+    height: 200px;
+}
+
+.form__right__campo {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    height: 100%;
+}
+
+.form__left__campo-input, .form__right__campo-input {
+    height: 100%;
+    width: 400px;
+}
+
+.form__left__campo-label, .form__right__campo-label {
+    color: white;
+}
 
 .form__button {
-    width: 60px;
+    width: 120px;
     height: 30px;
     margin-top: 15px;
+    background-color: map-get($paletaColores, rojo-2) !important;
+    color: white;
+
+    // &:hover {
+    //     color: black;
+    // }    PONER EN QUERIES 
 }
