@@ -1,10 +1,8 @@
 #aboutus__main {
     background-image: map-get($backgrounds, background-3);
     background-size: cover;
-    // height: 90vh;
     display: flex;
     flex-direction: row;
-    // height: 100%;
 
     h1 {
         color: map-get($paletaColores, blanco);
@@ -15,18 +13,6 @@
     }
 }
 
-// .aboutus__container {
-//     display: flex;
-//     flex-direction: row;
-//     height: 100%;
-// }
-
-// .aboutus__text {
-//     height: 100%;
-//     display: flex;
-//     flex-direction: column;
-// }
-
 .aboutus__img {
     display: flex;
 
@@ -36,16 +22,6 @@
         object-fit: cover;
     }
 }
-
-// .aboutus__container {
-//     h1 {
-//         color: map-get($paletaColores, blanco);
-//     }
-
-//     p {
-//         color: map-get($paletaColores, blanco);
-//     }
-// }
 
 .aboutus__title {
     font-size: 50px;

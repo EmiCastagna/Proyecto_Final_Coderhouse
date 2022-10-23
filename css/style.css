@@ -4,9 +4,6 @@
   box-sizing: border-box;
   font-family: 'Mukta', sans-serif; }
 
-header {
-  grid-area: encabezado; }
-
 .navbar {
   background-color: #BFBFBF !important; }
 
@@ -27,7 +24,6 @@ header {
 
 footer {
   background-color: #0d0d0d;
-  grid-area: footer;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start; }
@@ -68,8 +64,7 @@ footer {
 
 #home__main {
   background-image: url(../assets/images/background/Background_Black_1.webp);
-  background-size: cover;
-  grid-area: home; }
+  background-size: cover; }
 
 .grid__main {
   width: 100%;

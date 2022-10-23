@@ -1,10 +1,8 @@
 footer {
     background-color: map-get($paletaColores, negro) ;
-    grid-area: footer;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-
     
     h5 {
         font-size: large;
@@ -22,7 +20,6 @@ footer {
         font-size: medium;
     }
 }
-
 
 .container__redes {
     margin-top: 20px;
@@ -46,7 +43,6 @@ footer {
     display: flex;
     flex-direction: column;
 }
-
 
 .sucursal__link {
     display: flex;
