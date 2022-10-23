@@ -67,48 +67,46 @@ footer {
   margin-top: 20px; }
 
 #home__main {
-  background-color: #d1d1d1;
-  grid-area: home;
+  background-image: url(../assets/images/background/Background_Black_1.webp);
+  background-size: cover;
+  grid-area: home; }
+
+.grid__main {
+  width: 100%;
+  height: 100%;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr .75fr .25fr 1fr;
   grid-template-areas: "mtb mtb deco1 deco1" "deco2 guantes guantes cascos";
   row-gap: 1em;
   column-gap: 1em;
-  background-image: url(../assets/images/background/Background_Black_1.webp);
-  background-size: cover;
   flex-wrap: wrap; }
 
 .image__mtb {
-  background-color: aqua;
   grid-area: mtb;
   width: 100%;
   height: 100%;
   object-fit: cover; }
 
 .image__deco-uno {
-  background-color: brown;
   grid-area: deco1;
   width: 100%;
   height: 100%;
   object-fit: cover; }
 
 .image__deco-dos {
-  background-color: blueviolet;
   grid-area: deco2;
   width: 100%;
   height: 100%;
   object-fit: cover; }
 
 .image__guantes {
-  background-color: chartreuse;
   grid-area: guantes;
   width: 100%;
   height: 100%;
   object-fit: cover; }
 
 .image__cascos {
-  background-color: darkgoldenrod;
   grid-area: cascos;
   width: 100%;
   height: 100%;
@@ -161,19 +159,20 @@ footer {
   text-decoration: none;
   color: white;
   background-color: #590202;
-  width: 40%;
+  width: 130px;
   border-radius: 5px;
   display: flex;
   justify-content: center; }
 
 #aboutus__main {
   background-image: url(https://images.unsplash.com/photo-1603715749723-240c88df18b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
-  background-size: cover; }
-
-.aboutus__container {
+  background-size: cover;
   display: flex;
-  flex-direction: row;
-  height: 100%; }
+  flex-direction: row; }
+  #aboutus__main h1 {
+    color: white; }
+  #aboutus__main p {
+    color: white; }
 
 .aboutus__img {
   display: flex; }
@@ -181,12 +180,6 @@ footer {
     width: 25vw;
     height: 100%;
     object-fit: cover; }
-
-.aboutus__container h1 {
-  color: white; }
-
-.aboutus__container p {
-  color: white; }
 
 .aboutus__title {
   font-size: 50px; }
@@ -291,7 +284,7 @@ footer {
       transition: ease-in-out all .4s; } }
 
 @media (max-width: 1200px) {
-  #home__main {
+  .grid__main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -334,10 +327,16 @@ footer {
   .card__btn {
     margin-bottom: 10px; } }
 
+@media (min-width: 720px) {
+  #aboutus__main {
+    height: 90vh; } }
+
 @media (max-width: 470px) {
   .form__left__campo-input, .form__right__campo-input {
     width: calc(100vw - 10vw); }
   footer {
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center; } }
+    justify-content: center;
+    align-items: flex-start; }
+    footer .container__redes {
+      margin-left: 20px; } }
